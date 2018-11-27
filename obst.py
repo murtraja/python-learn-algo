@@ -3,7 +3,15 @@ q = [2,3,1,1,1]
 w = [[-1 for _ in range(0, len(q))] for _ in range(0, len(q))]
 e = [[-1 for _ in range(0, len(q)+1)] for _ in range(0, len(q)+1)]
 r = [[-1 for _ in range(0, len(q)+1)] for _ in range(0, len(q)+1)]
-
+'''
+OUTPUT:
+Cost of tree: 40
+preorder traversal: 
+2 
+1 
+3 
+4 
+'''
 def getE(i, j):
     # print("e[{}][{}]".format(i,j))
     if e[i][j] != -1:
